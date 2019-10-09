@@ -14,14 +14,14 @@
 
 | Keystrokes | Action                                                      | Command                        | Example                          |
 |------------+-------------------------------------------------------------+--------------------------------+----------------------------------|
-| `C-h C-h`  | show help for help system                                   | `help-for-help`                |                                  |
-| `C-h b`    | display all key bindings                                    | `describe-bindings`            |                                  |
-| `C-h e`    | go to the \*Messages\* buffer                               | `view-echo-area-messages`      |                                  |
-| `C-h f`    | display documentation for given function                    | `describe-function`            | `C-h f package-refresh-contents` |
-| `C-h F`    | show Emacs manual's section for command                     | `info-goto-emacs-command-node` | `C-h F package-install`          |
-| `C-h k`    | display documentation for key sequence                      | `describe-key`                 | C-h k C-x C-s`                   |
-| `C-h m`    | display documentation of current major mode and minor modes | `describe-mode`                |                                  |
-| `C-h v`    | display the full documentation for variable                 | `describe-variable`            |                                  |
+| =C-h C-h=  | show help for help system                                   | `help-for-help`                |                                  |
+| =C-h b=    | display all key bindings                                    | `describe-bindings`            |                                  |
+| =C-h e=    | go to the \*Messages\* buffer                               | `view-echo-area-messages`      |                                  |
+| =C-h f=    | display documentation for given function                    | `describe-function`            | `C-h f package-refresh-contents` |
+| =C-h F=    | show Emacs manual's section for command                     | `info-goto-emacs-command-node` | `C-h F package-install`          |
+| =C-h k=    | display documentation for key sequence                      | `describe-key`                 | C-h k C-x C-s`                   |
+| =C-h m=    | display documentation of current major mode and minor modes | `describe-mode`                |                                  |
+| =C-h v=    | display the full documentation for variable                 | `describe-variable`            |                                  |
 
 **  Navigation/moving
 
