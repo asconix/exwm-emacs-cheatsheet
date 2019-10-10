@@ -12,90 +12,125 @@
 
 ** Help
 
-| Keystrokes | Action                                                      | Command                        | Example                          |
-|------------+-------------------------------------------------------------+--------------------------------+----------------------------------|
-| =C-h C-h=  | show help for help system                                   | `help-for-help`                |                                  |
-| =C-h b=    | display all key bindings                                    | `describe-bindings`            |                                  |
-| =C-h e=    | go to the \*Messages\* buffer                               | `view-echo-area-messages`      |                                  |
-| =C-h f=    | display documentation for given function                    | `describe-function`            | `C-h f package-refresh-contents` |
-| =C-h F=    | show Emacs manual's section for command                     | `info-goto-emacs-command-node` | `C-h F package-install`          |
-| =C-h k=    | display documentation for key sequence                      | `describe-key`                 | C-h k C-x C-s`                   |
-| =C-h m=    | display documentation of current major mode and minor modes | `describe-mode`                |                                  |
-| =C-h v=    | display the full documentation for variable                 | `describe-variable`            |                                  |
+| Keystrokes | Command                        | Action                                                      | Example                          |
+|------------+--------------------------------+-------------------------------------------------------------+----------------------------------|
+| =C-h C-h=  | =help-for-help=                | show help for help system                                   |                                  |
+| =C-h b=    | =describe-bindings=            | display all key bindings                                    |                                  |
+| =C-h e=    | =view-echo-area-messages=      | go to the \*Messages\* buffer                               |                                  |
+| =C-h f=    | =describe-function=            | display documentation for given function                    | =C-h f package-refresh-contents= |
+| =C-h F=    | =info-goto-emacs-command-node= | show Emacs manual's section for command                     | =C-h F package-install=          |
+| =C-h k=    | =describe-key=                 | display documentation for key sequence                      | C-h k C-x C-s=                   |
+| =C-h m=    | =describe-mode=                | display documentation of current major mode and minor modes |                                  |
+| =C-h v=    | =describe-variable=            | display the full documentation for variable                 |                                  |
 
 **  Navigation/moving
 
-| Keystrokes | Action                 | Command                  | Example         |
-|------------+------------------------+--------------------------+-----------------|
-| `C-p `     | previous line          | `previous-line`          |                 |
-| `C-n `     | next line              | `next-line`              |                 |
-| `C-a `     | beginning of lin       | `move-beginning-of-line` |                 |
-| `C-e `     | end of line            | `move-end-of-line`       |                 |
-| `C-b `     | backward a character   | `backward-char`          |                 |
-| `C-f `     | forward a character    | `forward-char`           |                 |
-| `M-b `     | backward a word        | `backward-word`          |                 |
-| `M-f `     | forward a word         | `forward-word`           |                 |
-| `M-a `     | beginning of sentence  | `backward-sentence`      |                 |
-| `M-e `     | end of sentence xs     | `forward-sentence`       |                 |
-| `M-{ `     | beginning of paragraph | `backward-paragraph`     |                 |
-| `M-} `     | end of paragraph       | `forward-paragraph`      |                 |
-| `C-x [`    | previous page          | `backward-page`          |                 |
-| `C-x ]`    | next page              | `forward-page`           |                 |
-| `C-v`      | next screen            | `scroll-up-command`      |                 |
-| `M-v`      | previous screen        | `scroll-down-command`    |                 |
-| `M-< `     | beginning of buffer    | `beginning-of-buffer`    |                 |
-| `M-> `     | end of buffer          |                          | `end-of buffer` |
-| `M-g g`    | go to line             | `goto-line`              | `M-g g 50`      |
+| Keystrokes | Command                  | Action                 | Example         |
+|------------+--------------------------+------------------------+-----------------|
+| =C-p=      | =previous-line=          | previous line          |                 |
+| =C-n=      | =next-line=              | next line              |                 |
+| =C-a=      | =move-beginning-of-line= | beginning of line      |                 |
+| =C-e=      | =move-end-of-line=       | end of line            |                 |
+| =C-b=      | =backward-char=          | backward a character   |                 |
+| =C-f=      | =forward-char=           | forward a character    |                 |
+| =M-b=      | =backward-word=          | backward a word        |                 |
+| =M-f=      | =forward-word=           | forward a word         |                 |
+| =M-a=      | =backward-sentence=      | beginning of sentence  |                 |
+| =M-e=      | =forward-sentence=       | end of sentence xs     |                 |
+| =M-{=      | =backward-paragraph=     | beginning of paragraph |                 |
+| =M-}=      | =forward-paragraph=      | end of paragraph       |                 |
+| =C-x [=    | =backward-page=          | previous page          |                 |
+| =C-x ]=    | =forward-page=           | next page              |                 |
+| =C-v=      | =scroll-up-command=      | next screen            |                 |
+| =M-v=      | =scroll-down-command=    | previous screen        |                 |
+| =M-<=      | =beginning-of-buffer=    | beginning of buffer    |                 |
+| =M->=      |                          | end of buffer          | =end-of buffer= |
+| =M-g g=    | =goto-line=              | go to line             | =M-g g 50=      |
 
 ** Files/Buffers
 
-| Keystrokes | Action                                           | Command             | Example           |
-|------------+--------------------------------------------------+---------------------+-------------------|
-| `C-x C-f`  | Open file in new buffer or create if none exists | `find-file`         | `C-x C-f init.el` |
-| `C-x C-s`  | Write current buffer to file if modified         | `save-buffer`       |                   |
-| `C-x s`    | Save all buffers connected to a file             | `save-some-buffers` |                   |
-| `C-x C-w`  | Write current buffer into named file             | `write-file`        | `C-x C-w foo.txt` |
-| `C-x i`    | Insert contents of a file into current buffer    | `insert-file`       | `C-x i init.el`   |
+| Keystrokes | Command             | Action                                           | Example           |
+|------------+---------------------+--------------------------------------------------+-------------------|
+| =C-x C-f=  | =find-file=         | Open file in new buffer or create if none exists | =C-x C-f init.el= |
+| =C-x C-s=  | =save-buffer=       | Write current buffer to file if modified         |                   |
+| =C-x s=    | =save-some-buffers= | Save all buffers connected to a file             |                   |
+| =C-x C-w=  | =write-file=        | Write current buffer into named file             | =C-x C-w foo.txt= |
+| =C-x i=    | =insert-file=       | Insert contents of a file into current buffer    | =C-x i init.el=   |
 
 ** Manage windows
 
-| Keystroke | Action                                             | Command                               | Example                   |
-|-----------+----------------------------------------------------+---------------------------------------+---------------------------|
-| `C-x 2`   | split the selected window horizontally             | `split-window-below`                  |                           |
-| `C-x 3`   | split the selected window vertically               | `split-window-right`                  |                           |
-| `C-x o`   | select another window in cyclic ordering           | `other-window`                        |                           |
-| `C-x 0`   | close the current window                           | `delete-window`                       |                           |
-| `C-x 1`   | close all but the current window                   | `delete-other-windows`                |                           |
-| `C-x ^`   | expand vertically by 1 line or use `C-u` before    | `enlarge-window`                      | `C-u 5 C-x ^` (5 lines)   |
-| `C-x {`   | shrink horizontally by 1 line, or use `C-u` before | `shrink-window-horizontally`          | `C-u 5 C-x {` (5 columns) |
-| `C-x }`   | expand horizontally by 1 line, or use `C-u` before | `enlarge-window-horizontally`         | `C-u 5 C-x }` (5 columns) |
-| `C-x -`   | shrink height of windows if larger than buffer     | `shrink-window-if-larger-than-buffer` |                           |
-| `C-x +`   | balance the sizes of windows                       | `balance-windows`                     |                           |
+| Keystroke | Command                               | Action                                             | Example                   |
+|-----------+---------------------------------------+----------------------------------------------------+---------------------------|
+| =C-x 2=   | =split-window-below=                  | split the selected window horizontally             |                           |
+| =C-x 3=   | =split-window-right=                  | split the selected window vertically               |                           |
+| =C-x o=   | =other-window=                        | select another window in cyclic ordering           |                           |
+| =C-x 0=   | =delete-window=                       | close the current window                           |                           |
+| =C-x 1=   | =delete-other-windows=                | close all but the current window                   |                           |
+| =C-x ^=   | =enlarge-window=                      | expand vertically by 1 line or use =C-u= before    | =C-u 5 C-x ^= (5 lines)   |
+| =C-x {=   | =shrink-window-horizontally=          | shrink horizontally by 1 line, or use =C-u= before | =C-u 5 C-x {= (5 columns) |
+| =C-x }=   | =enlarge-window-horizontally=         | expand horizontally by 1 line, or use =C-u= before | =C-u 5 C-x }= (5 columns) |
+| =C-x -=   | =shrink-window-if-larger-than-buffer= | shrink height of windows if larger than buffer     |                           |
+| =C-x +=   | =balance-windows=                     | balance the sizes of windows                       |                           |
 
 ** Select/mark region
 
- | Keystrokes  | Action                               |
- |-------------+--------------------------------------|
- | `C-space`   | by line                              |
- | `C-x space` | by column                            |
- | `C-x C-x`   | go to the other end of marked region |
- | `M-h`       | mark paragraph                       |
- | `C-x C-p`   | mark the current page                |
- | `C-x h`     | mark the whole buffer                |
+| Keystrokes  | Command                   | Action                                                               |
+|-------------+---------------------------+----------------------------------------------------------------------|
+| =C-space=   | =set-mark-command=        | set the mark point and activate it                                   |
+| =C-x space= | =rectangle-mark-mode=     | mark the region as rectangular                                       |
+| =C-x C-x=   | =exchange-point-and-mark= | go to the other end of marked region                                 |
+| =M-h=       | =mark-paragraph=          | put the mark where the point is now, and point where the mark is now |
+| =C-x C-p=   | =mark-page=               | put the mark at end of page, point at beginning                      |
+| =C-x h=     | =mark-whole-buffer=       | put the point at beginning and mark at end of buffer                 |
+
+** Editing
+
+| Keystrokes | Command         | Action                                                                                | Example                                |
+|------------+-----------------+---------------------------------------------------------------------------------------+----------------------------------------|
+| =C-d=      | =delete-char N= | delete the following N characters                                                     | =C-u 5 C-d= (delete next 5 characters) |
+| =M-d=      | =kill-word=     | kill the following N words                                                            | =C-u 5 M-d= (delete next 5 words)      |
+| =M-DEL=    |                 | kill previous N words                                                                 | =C-u 5 M-DEL= (delete last 5 words)    |
+| =C-k=      | =kill-line=     | kill the rest of the current line                                                     |                                        |
+| =C-w=      |                 | Cut selected region                                                                   |                                        |
+| =M-w=      |                 | Copy selected region                                                                  |                                        |
+| =C-y=      |                 | Paste last cut things                                                                 |                                        |
+| =M-y=      |                 | repeatedly after a =C-y=: go through the ring of killed stuff to choose what to paste |                                        |
+| =C-x u=    |                 | Undo                                                                                  |                                        |
+
+  ### Search
+
+  |Keystrokes  | Action|
+  |------------|------------
+  |=C-s= | Incremental search forward, type
+  |=C-r= | Incremental search backward, type
+  |=C-s C-w= | Incremental search forward, following word
+  |=M-x word-search-forward= | Exact search forward
+  |=M-x word-search-backward= | Exact search backward
+  |=C-M-s= | incremental regexp search forward
+  |=C-M-r= | incremental reg-ex search backward
+  |=C-g= | Interrupt search, go where search began
+
+  ### Replace
+
+  |Keystrokes  | Action|
+  |------------|------------
+  |=M-%= | Query replace
+  |=C-M-%= | Regexp query replace 
+  |=M-x replace-string=| Replace string without querying
 
 ** Miscellaneous
 
-| Keystrokes | Action                              |                     |
-|------------+-------------------------------------+---------------------|
-| `C-q C-l`  | insert a page break                 | `quoted-insert`     |
-| `C-g`      | quit current execution immediately  | `keyboard-quit`     |
-| `C-x C-=`  | increase default face height by one | `text-scale-adjust` |
+| Keystrokes | Command             | Action                              |
+|------------+---------------------+-------------------------------------|
+| =C-q C-l=  | =quoted-insert=     | insert a page break                 |
+| =C-g=      | =keyboard-quit=     | quit current execution immediately  |
+| =C-x C-==  | =text-scale-adjust= | increase default face height by one |
 
 * Org mode related key bindings
 
 | Keystrokes | Command           | Action          |
 |------------+-------------------+-----------------|
-| `C-c C-c`  | org-ctrl-c-ctrl-c | realign a table |
+| =C-c C-c=  | org-ctrl-c-ctrl-c | realign a table |
 
 
 
@@ -105,12 +140,12 @@
 
   |Keystrokes  | Action|
   |------------|------------|
-  |`C-x i`     | Insert||`C-x C-b` | list available buffers
-  |`C-x b`   | move to a given buffer or create a new one
-  |`C-x ->`   | move to next buffer in the list
-  |`C-x <-`   | move to previous buffer in the) list
-  |`C-x k`   | kill a buffer (remove from the list)
-  |`C-x C-q`   | set/unset a buffer as read-only
+  |=C-x i=     | Insert||=C-x C-b= | list available buffers
+  |=C-x b=   | move to a given buffer or create a new one
+  |=C-x ->=   | move to next buffer in the list
+  |=C-x <-=   | move to previous buffer in the) list
+  |=C-x k=   | kill a buffer (remove from the list)
+  |=C-x C-q=   | set/unset a buffer as read-only
 
 
 
@@ -121,74 +156,40 @@
 
   |Keystrokes  | Action|
   |------------|------------
-  |`C-x r l` | display bookmarks list
-  |`C-x r m` | set a bookmark
-  |`C-x r b` | jump to a bookmark
-  |`M-x bookmark-delete` | delete a saved bookmark
-  |`M-x bookmark-rename` | rename a saved bookmark
+  |=C-x r l= | display bookmarks list
+  |=C-x r m= | set a bookmark
+  |=C-x r b= | jump to a bookmark
+  |=M-x bookmark-delete= | delete a saved bookmark
+  |=M-x bookmark-rename= | rename a saved bookmark
 
 
-  ### Editing
-
-  |Keystrokes  | Action|
-  |------------|------------
-  |`C-d`       | Delete one char forward|        
-  |`M-d`       | Cut one word forward   |
-  |`M-DEL`     | Cut one word backward  |
-  |`C-k `      | Cut to the end of line|
-  |`C-w `      | Cut selected region|
-  |`M-w`       | Copy selected region|
-  |`C-y`       | Paste last cut things|
-  |`M-y`       | repeatedly after a `C-y`: go through the ring of killed stuff to choose what to paste|
-  |`C-x u`     | Undo|
-
-  ### Search
-
-  |Keystrokes  | Action|
-  |------------|------------
-  |`C-s` | Incremental search forward, type
-  |`C-r` | Incremental search backward, type
-  |`C-s C-w` | Incremental search forward, following word
-  |`M-x word-search-forward` | Exact search forward
-  |`M-x word-search-backward` | Exact search backward
-  |`C-M-s` | incremental regexp search forward
-  |`C-M-r` | incremental reg-ex search backward
-  |`C-g` | Interrupt search, go where search began
-
-  ### Replace
-
-  |Keystrokes  | Action|
-  |------------|------------
-  |`M-%` | Query replace
-  |`C-M-%` | Regexp query replace 
-  |`M-x replace-string`| Replace string without querying
 
   ### Abbreviations
 
   |Keystrokes  | Action|
   |------------|------------
-  |`C-x aig` | add a global abbreviation (with last word as abbrev)
-  |`C-x ail` | add abbreviation for a mode (with last word as abbrev)
-  |`M-x unexpand-abbrev` | undo last word abbreviation
+  |=C-x aig= | add a global abbreviation (with last word as abbrev)
+  |=C-x ail= | add abbreviation for a mode (with last word as abbrev)
+  |=M-x unexpand-abbrev= | undo last word abbreviation
 
   ### Wrapping/Indenting/commenting text
 
   |Keystrokes  | Action|
   |------------|------------
-  |`M-q `      | wrap paragraph|
-  |`M-x fill-region`  | wrap paragraphs from selected region|
-  |`C-M-\`  | indent lines from selected region|
-  |`M-;`  | comment line or selected region
+  |=M-q =      | wrap paragraph|
+  |=M-x fill-region=  | wrap paragraphs from selected region|
+  |=C-M-\=  | indent lines from selected region|
+  |=M-;=  | comment line or selected region
 
 
   ### Repeating a command
 
   |Keystrokes  | Action|
   |------------|------------
-  |`M-n CMD_KEYSTROKES` | repeat n times `CMD_KEYSTROKES`|
-  |`C-u CMD_KEYSTROKES` | repeat 4 times `CMD_KEYSTROKES`|
-  |`C-u C-u CMD_KEYSTROKES` | repeat 16 times `CMD_KEYSTROKES`|
-  |`C-u C-u C-u CMD_KEYSTROKES` | repeat 64 times `CMD_KEYSTROKES`|
+  |=M-n CMD_KEYSTROKES= | repeat n times =CMD_KEYSTROKES=|
+  |=C-u CMD_KEYSTROKES= | repeat 4 times =CMD_KEYSTROKES=|
+  |=C-u C-u CMD_KEYSTROKES= | repeat 16 times =CMD_KEYSTROKES=|
+  |=C-u C-u C-u CMD_KEYSTROKES= | repeat 64 times =CMD_KEYSTROKES=|
 
   and so on
 
@@ -196,32 +197,32 @@
 
   |Keystrokes  | Action|
   |------------|------------
-  |`M-x ispell-change-dictionary` | set spelling dictionary|
-  |`M-$` | ispell check a single word
-  |`M-x ispell-region` | check selected region|
-  |`M-x ispell-buffer` | check current buffer|
-  |`M-x flyspell-mode` | use flyspell for spelling on the fly|
-  |`C-g` | Stop spell checking
+  |=M-x ispell-change-dictionary= | set spelling dictionary|
+  |=M-$= | ispell check a single word
+  |=M-x ispell-region= | check selected region|
+  |=M-x ispell-buffer= | check current buffer|
+  |=M-x flyspell-mode= | use flyspell for spelling on the fly|
+  |=C-g= | Stop spell checking
 
 
   ### Shell and shell mode
 
   |Keystrokes  | Action|
   |------------|------------
-  |`M-!`      | execute shell command|
-  |`C-u M-!`  | execute shell command and put output in current buffer|
-  |`M-|`      | execute shell command on marked region|
-  |`M-x shell` | shell mode|
+  |=M-!=      | execute shell command|
+  |=C-u M-!=  | execute shell command and put output in current buffer|
+  |=M-|=      | execute shell command on marked region|
+  |=M-x shell= | shell mode|
 
   **Shell mode**:
 
   |Keystrokes  | Action|
   |------------|------------
-  |`C-c C-z` | equal to `C-z` in pure shell|
-  |`C-c C-d` | as above with `C-d`|
-  |`C-c C-c` | as above with `C-c`|
-  | `M-p` | history, previous command
-  | `M-n` | history, next command
+  |=C-c C-z= | equal to =C-z= in pure shell|
+  |=C-c C-d= | as above with =C-d=|
+  |=C-c C-c= | as above with =C-c=|
+  | =M-p= | history, previous command
+  | =M-n= | history, next command
 
 
 
@@ -229,11 +230,11 @@
 
   |Keystrokes  | Action|
   |------------|------------
-  | `M Tab`   | autocomplete
-  | `C-c C-r` | evaluate region
-  | `C-c C-c` | evaluate buffer
-  | `C-c C-l` | evaluate file
-  | `C-c C-v` | static check of code 
+  | =M Tab=   | autocomplete
+  | =C-c C-r= | evaluate region
+  | =C-c C-c= | evaluate buffer
+  | =C-c C-l= | evaluate file
+  | =C-c C-v= | static check of code 
 
 
   <!--
@@ -241,58 +242,58 @@
 
   |Keystrokes  | Action|
   |------------|------------
-  |`C-x d` | go in Dired mode
-  |`C-x C-f directory_path` | go in Dired mode
-  |`q` | quit|
-  |`g` | refresh dir listing|
-  |`s` | sort list of files by name/date|
-  |`v` | view selected file (read only)|
-  |`^` | move to parent directory|
-  |`>` | go to parent directory|
-  |`<` | go to previous directory|
-  |`Enter` | edit selected file/enter directory|
-  |`+` | create a directory
-  |`m` | mark a file|
-  |`%m` | mark files via regexp on the name|
-  |`%g` | mark files via regexp on the content (similar to grep)|
-  |`u` | unmark a file|
-  |`U` | unmark all marked files|
-  |`D` | delete
-  |`C` | copy
-  |`R` | rename/move the file
-  |`S` | make soft link
-  |`Z` | compress/uncompress (gzip)
-  |`! command`| run command on a file
+  |=C-x d= | go in Dired mode
+  |=C-x C-f directory_path= | go in Dired mode
+  |=q= | quit|
+  |=g= | refresh dir listing|
+  |=s= | sort list of files by name/date|
+  |=v= | view selected file (read only)|
+  |=^= | move to parent directory|
+  |=>= | go to parent directory|
+  |=<= | go to previous directory|
+  |=Enter= | edit selected file/enter directory|
+  |=+= | create a directory
+  |=m= | mark a file|
+  |=%m= | mark files via regexp on the name|
+  |=%g= | mark files via regexp on the content (similar to grep)|
+  |=u= | unmark a file|
+  |=U= | unmark all marked files|
+  |=D= | delete
+  |=C= | copy
+  |=R= | rename/move the file
+  |=S= | make soft link
+  |=Z= | compress/uncompress (gzip)
+  |=! command=| run command on a file
 
   ### Other useful modes
 
   |Keystrokes  | Action|
   |------------|------------
-  |`M-x man`| manpages mode 
-  |`M-x calendar`| view calendar
+  |=M-x man=| manpages mode 
+  |=M-x calendar=| view calendar
 
   ### Compile
 
-  Start with something like `emacs *.[ch] Makefile`; do the makefile. Then
+  Start with something like =emacs *.[ch] Makefile=; do the makefile. Then
 
   |Keystrokes  | Action|
   |------------|------------
-  |`M-x compile`| compile (`make -k` by default)
-  |`C-x backtick`| buffer set to next compile error
-  |`M-n` | next error
-  |`M-p` | previous error
-  |`C-c C-c` | go to current error with a buffer
-  |`space` | scroll down
-  |`del` | scroll up
+  |=M-x compile=| compile (=make -k= by default)
+  |=C-x backtick=| buffer set to next compile error
+  |=M-n= | next error
+  |=M-p= | previous error
+  |=C-c C-c= | go to current error with a buffer
+  |=space= | scroll down
+  |=del= | scroll up
 
   ### etags
 
   |Keystrokes  | Action|
   |------------|------------
-  |`etags *.[ch]` | from command line, builds/update tag table (`TAGS` file by default)
-  |`M-x visit-tags-table`| tell emacs to use a tag table
-  |`M-.`| find tag/visit definition in this window
-  |`C-x 4 .` | find tag/visit in other window
+  |=etags *.[ch]= | from command line, builds/update tag table (=TAGS= file by default)
+  |=M-x visit-tags-table=| tell emacs to use a tag table
+  |=M-.=| find tag/visit definition in this window
+  |=C-x 4 .= | find tag/visit in other window
 
   ### Notes
 
