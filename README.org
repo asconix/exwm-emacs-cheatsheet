@@ -19,7 +19,7 @@
 | =C-h e=    | =view-echo-area-messages=      | go to the \*Messages\* buffer                               |                                  |
 | =C-h f=    | =describe-function=            | display documentation for given function                    | =C-h f package-refresh-contents= |
 | =C-h F=    | =info-goto-emacs-command-node= | show Emacs manual's section for command                     | =C-h F package-install=          |
-| =C-h k=    | =describe-key=                 | display documentation for key sequence                      | C-h k C-x C-s=                   |
+| =C-h k=    | =describe-key=                 | display documentation for key sequence                      | =C-h k C-x C-s=                  |
 | =C-h m=    | =describe-mode=                | display documentation of current major mode and minor modes |                                  |
 | =C-h v=    | =describe-variable=            | display the full documentation for variable                 |                                  |
 
