@@ -298,4 +298,3 @@
   ### Notes
 
   Thanks go to Luca for his [Emacs cheatsheet](https://github.com/lbraglia/emacs_cheatsheet/blob/master/README.md) that I used at starting point.
-
