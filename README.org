@@ -120,11 +120,13 @@
 
 ** Miscellaneous
 
-| Keystrokes | Command             | Action                              |
-|------------+---------------------+-------------------------------------|
-| =C-q C-l=  | =quoted-insert=     | insert a page break                 |
-| =C-g=      | =keyboard-quit=     | quit current execution immediately  |
-| =C-x C-==  | =text-scale-adjust= | increase default face height by one |
+| Keystrokes | Command             | Action                                      |
+|------------+---------------------+---------------------------------------------|
+| =C-q C-l=  | =quoted-insert=     | insert a page break                         |
+| =C-g=      | =keyboard-quit=     | quit current execution immediately          |
+| =C-x C-==  | =text-scale-adjust= | increase default face height by one         |
+| =C-x C--=  | =text-scale-adjust= | decrease default face height by one         |
+| =C-x C-0=  | =text-scale-adjust= | reset default face height to global default |
 
 * Org mode related key bindings
 
